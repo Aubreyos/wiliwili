@@ -1,0 +1,24 @@
+package:
+  id: org.deepin.wiliwili
+  name: deepin-wiliwili
+  version: 1.0.1
+  kind: app
+  description: |
+    simple Qt wiliwili.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 20.5.0
+
+depends:
+  - id: icu
+    version: 63.1
+    type: runtime
+
+source:
+  kind: git
+  url: "https://github.com/xfangfang/wiliwili.git"
+  commit: 98a4f293633dde7f2e51547f71c6a5abc26a948e
+
+build:
+  kind: qmake
