@@ -1,0 +1,27 @@
+Package:
+  Name: deepin-wiliwili
+  Version: 1.0.1
+  Architecture: amd64
+  Description: Simple Qt wiliwili application.
+
+Maintainer:
+  Name: MMHMM
+  Email: 1982552008@qq.com
+
+Source:
+  Git: https://github.com/xfangfang/wiliwili.git
+  Commit: a3b89c3aa34c1aff8d7f823f0f4a87d5da8d4dc0
+
+Build:
+  Type: qmake
+  Build-Depends:
+    - qt5-default
+
+Install:
+  - Files:
+      - wiliwili.desktop: /usr/share/applications/wiliwili.desktop
+      - wiliwili: /usr/bin/wiliwili
+
+Runtime:
+  Depends:
+    - icu (>= 63.1)
