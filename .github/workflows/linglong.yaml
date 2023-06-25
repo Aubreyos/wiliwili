@@ -1,0 +1,27 @@
+package:
+  id: org.deepin.wiliwili
+  version: 1.1
+  kind: app
+  description:|
+    reader for deepin os.
+
+runtime:
+  id: org.deepin.runtime
+  version: 20.0.0
+  Depends:
+    - icu (>= 63.1)
+
+depends:
+  - id: libopenjp2
+    version: 2.4.0
+  - id: djvu
+    version: 3.5.28
+
+source:
+  kind: git
+  url: "https://github.com/Aubreyos/wiliwili.git"
+  version: master
+  commit: a3b89c3aa34c1aff8d7f823f0f4a87d5da8d4dc0
+
+build:
+  kind: qmake
